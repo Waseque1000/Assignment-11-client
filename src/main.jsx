@@ -6,6 +6,7 @@ import { AuthContextProvider } from "./contextApi/AuthContext.jsx";
 import { DataContextProvider } from "./contextApi/DataContext.jsx";
 import "./index.css";
 import { router } from "./routes/Routes.jsx";
+import { ToastContainer } from "react-toastify";
 
 const queryClient = new QueryClient();
 createRoot(document.getElementById("root")).render(
@@ -13,6 +14,7 @@ createRoot(document.getElementById("root")).render(
     <QueryClientProvider client={queryClient}>
       <AuthContextProvider>
         <DataContextProvider>
+          <ToastContainer position="top-right" autoClose={3000} />
           <RouterProvider router={router}></RouterProvider>
         </DataContextProvider>
       </AuthContextProvider>

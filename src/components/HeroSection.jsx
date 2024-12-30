@@ -25,12 +25,16 @@ const HeroSection = () => {
               artifacts
             </p>
             <div className="flex justify-center gap-4">
-              <button className="rounded-full bg-blue-600 px-8 py-3 text-white hover:bg-blue-700">
-                Start Exploring
-              </button>
-              <button className="rounded-full border-2 border-white px-8 py-3 text-white hover:bg-white/10">
-                Add Artifact
-              </button>
+              <NavLink to={"/all-artifacts"}>
+                <button className="rounded-full bg-blue-600 px-8 py-3 text-white hover:bg-blue-700">
+                  Start Exploring
+                </button>
+              </NavLink>
+              <NavLink to={"/add-artifacts"}>
+                <button className="rounded-full border-2 border-white px-8 py-3 text-white hover:bg-white/10">
+                  Add Artifact
+                </button>
+              </NavLink>
             </div>
           </div>
         </div>
@@ -54,12 +58,12 @@ const HeroSection = () => {
           artifacts
         </p>
         <div className="grid w-fit justify-center gap-2 grid-cols-2 items-center mx-auto">
-          <NavLink to={"/assignments"}>
+          <NavLink to={"/"}>
             <button className="btn dark:border-slate-900 bg-green-500 hover:bg-green-600 transition-all duration-300 text-white">
               Start Exploring
             </button>
           </NavLink>
-          <NavLink to={"/assignments-create"}>
+          <NavLink to={"/add-artifacts"}>
             <button className="btn border bg-white hover:bg-gray-100 dark:bg-gray-200 transition-all duration-300 text-gray-500 dark:text-gray-700">
               Add Artifact
             </button>

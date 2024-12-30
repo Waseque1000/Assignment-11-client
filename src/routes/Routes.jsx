@@ -10,6 +10,8 @@ import PublicRoute from "./PublicRoute";
 import AllArtifacts from "../components/AllArtifacts";
 import AddArtifact from "../components/AddArtifacts";
 import ArtifactDetails from "../components/ArtifactDetails";
+import LikedArifacts from "../components/LikedArifacts";
+import MyArtifacts from "../components/MyArtifacts";
 
 export const router = createBrowserRouter([
   {
@@ -49,7 +51,24 @@ export const router = createBrowserRouter([
         loader: ({ params }) =>
           fetch(`http://localhost:5000/artifact/${params.id}`),
       },
-
+      {
+        path: "/liked",
+        element: (
+          <PrivateRoute>
+            <LikedArifacts />
+          </PrivateRoute>
+        ),
+        loader: () => fetch("http://localhost:5000/liked"),
+      },
+      {
+        path: "/my-artifacts",
+        element: (
+          <PrivateRoute>
+            <MyArtifacts />
+          </PrivateRoute>
+        ),
+        loader: () => fetch("http://localhost:5000/all-data"),
+      },
       {
         path: "/auth/login",
         element: (
