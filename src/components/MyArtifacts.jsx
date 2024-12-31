@@ -20,7 +20,7 @@
 //   const confirmDelete = async () => {
 //     try {
 //       const response = await fetch(
-//         `http://localhost:5000/all-data/${selectedArtifactId}`,
+//         `https://assignment-11-psi.vercel.app/all-data/${selectedArtifactId}`,
 //         {
 //           method: "DELETE",
 //         }
@@ -49,7 +49,7 @@
 //   const handleUpdate = async (artifactId, updatedArtifact) => {
 //     try {
 //       const response = await fetch(
-//         `http://localhost:5000/all-data/${artifactId}`,
+//         `https://assignment-11-psi.vercel.app/all-data/${artifactId}`,
 //         {
 //           method: "PUT",
 //           headers: {
@@ -202,7 +202,7 @@ export default function MyArtifacts({ onUpdate }) {
   const handleUpdate = async (artifactId, updatedArtifact) => {
     try {
       const response = await fetch(
-        `http://localhost:5000/all-data/${artifactId}`,
+        `https://assignment-11-psi.vercel.app/all-data/${artifactId}`,
         {
           method: "PUT",
           headers: {

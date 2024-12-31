@@ -12,9 +12,12 @@ const LikedArtifacts = () => {
   const handleDelete = async (id) => {
     console.log("Attempting to delete artifact with id:", id); // Add this line
     try {
-      const response = await fetch(`http://localhost:5000/liked/${id}`, {
-        method: "DELETE",
-      });
+      const response = await fetch(
+        `https://assignment-11-psi.vercel.app/liked/${id}`,
+        {
+          method: "DELETE",
+        }
+      );
 
       if (!response.ok) {
         throw new Error("Failed to delete artifact");

@@ -12,20 +12,23 @@ const ArtifactDetails = () => {
   const handleAddToFavorites = async () => {
     try {
       // Send a POST request to save the artifact in the favorites database
-      const response = await fetch("http://localhost:5000/liked", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-          name: artifact.name,
-          description: artifact.description,
-          image: artifact.image,
-          location: artifact.location,
-          date: artifact.date,
-          likes: artifact.likes,
-        }),
-      });
+      const response = await fetch(
+        "https://assignment-11-psi.vercel.app/liked",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            name: artifact.name,
+            description: artifact.description,
+            image: artifact.image,
+            location: artifact.location,
+            date: artifact.date,
+            likes: artifact.likes,
+          }),
+        }
+      );
 
       if (response.ok) {
         toast.success("Artifact added to favorites!");

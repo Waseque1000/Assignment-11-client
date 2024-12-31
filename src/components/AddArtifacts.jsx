@@ -44,13 +44,16 @@ const AddArtifact = () => {
     };
 
     try {
-      const response = await fetch("http://localhost:5000/all-data", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(artifactData),
-      });
+      const response = await fetch(
+        "https://assignment-11-psi.vercel.app/all-data",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(artifactData),
+        }
+      );
 
       if (!response.ok) {
         throw new Error(`Error: ${response.statusText}`);
