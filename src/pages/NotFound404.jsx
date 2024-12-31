@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 
 export default function NotFound404() {
   useEffect(() => {
-    document.title = "404 Error | Crowdcube";
+    document.title = "404 Error | Artifacts";
   }, []);
   return (
     <div className="min-h-screen flex items-center justify-center bg-gray-100">

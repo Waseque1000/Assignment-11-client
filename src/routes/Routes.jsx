@@ -22,16 +22,16 @@ export const router = createBrowserRouter([
       {
         path: "/",
         element: <Home />,
-        loader: () => fetch("http://localhost:5000/all-data"),
+        loader: () => fetch("https://assignment-11-psi.vercel.app/all-data"),
       },
       {
         path: "/all-artifacts",
         element: (
-          <PrivateRoute>
-            <AllArtifacts />
-          </PrivateRoute>
+          // <PrivateRoute>
+          <AllArtifacts />
+          // </PrivateRoute>
         ),
-        loader: () => fetch("http://localhost:5000/all-data"),
+        loader: () => fetch("https://assignment-11-psi.vercel.app/all-data"),
       },
       {
         path: "/add-artifacts",
@@ -49,7 +49,7 @@ export const router = createBrowserRouter([
           </PrivateRoute>
         ),
         loader: ({ params }) =>
-          fetch(`http://localhost:5000/artifact/${params.id}`),
+          fetch(`https://assignment-11-psi.vercel.app/artifact/${params.id}`),
       },
       {
         path: "/liked",
@@ -58,7 +58,7 @@ export const router = createBrowserRouter([
             <LikedArifacts />
           </PrivateRoute>
         ),
-        loader: () => fetch("http://localhost:5000/liked"),
+        loader: () => fetch("https://assignment-11-psi.vercel.app/liked"),
       },
       {
         path: "/my-artifacts",
@@ -67,7 +67,7 @@ export const router = createBrowserRouter([
             <MyArtifacts />
           </PrivateRoute>
         ),
-        loader: () => fetch("http://localhost:5000/all-data"),
+        loader: () => fetch("https://assignment-11-psi.vercel.app/all-data"),
       },
       {
         path: "/auth/login",
