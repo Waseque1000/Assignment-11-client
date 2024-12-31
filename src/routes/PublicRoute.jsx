@@ -18,6 +18,6 @@ export default function PublicRoute({ children }) {
   if (location.state) {
     return <Navigate to={location.state}></Navigate>;
   } else {
-    return <Navigate to={"/assignments"}></Navigate>;
+    return <Navigate to={"/all-artifacts"}></Navigate>;
   }
 }

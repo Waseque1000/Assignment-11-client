@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import useAuth from "../services/useAuth";
 import { toast } from "react-toastify";
+import { Helmet } from "react-helmet";
 
 const AddArtifact = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -82,6 +83,9 @@ const AddArtifact = () => {
 
   return (
     <div className="min-h-screen bg-gray-50 p-6">
+      <Helmet>
+        <title>Add Artifacts</title>
+      </Helmet>
       <div className="max-w-2xl mx-auto bg-white rounded-xl shadow-md p-8">
         <h1 className="text-2xl font-bold text-gray-800 mb-6">
           Add New Artifact

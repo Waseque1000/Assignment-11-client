@@ -149,22 +149,7 @@ export default function Navbar() {
                 <ul
                   tabIndex={0}
                   className="menu menu-sm dark:shadow-sm dark:bg-slate-900  dark:text-gray-400 dropdown-content gap-2 bg-base-100 rounded-box z-[1] mt-3 w-64 p-4 shadow"
-                >
-                  <div>
-                    <a className="justify-between">Profile</a>
-                  </div>
-                  <div>
-                    <NavLink to={"/assignments-create"}>
-                      Create Assignments
-                    </NavLink>
-                  </div>
-                  <div>
-                    <NavLink to={"/my-attempted"}>My Attempted</NavLink>
-                  </div>
-                  <div>
-                    <a>Settings</a>
-                  </div>
-                </ul>
+                ></ul>
               </div>
             </div>
           ) : (

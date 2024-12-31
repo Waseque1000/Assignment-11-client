@@ -8,10 +8,14 @@ import FeaturedArtifacts from "../components/FeaturedArtifacts";
 import StatisticsSection from "../components/StatisticsSection";
 import ExploreSection from "../components/ExploreSection";
 import HistorySection from "../components/HistorySection";
+import { Helmet } from "react-helmet";
 
 export default function Home() {
   return (
     <div className="">
+      <Helmet>
+        <title> Artifacts</title>
+      </Helmet>
       <div className="md:pt-12 pt-5">
         <HeroSection></HeroSection>
       </div>

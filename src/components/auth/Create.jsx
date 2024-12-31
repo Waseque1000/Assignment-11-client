@@ -18,10 +18,6 @@ export default function Create() {
   const { emailPasswordCreate, profileUpdate } = useContext(AuthContext);
   const api = useAxios();
 
-  useEffect(() => {
-    document.title = "Create an account | Assignora";
-  }, []);
-
   const handleForm = async (e) => {
     setBtnLoading(true);
     e.preventDefault();

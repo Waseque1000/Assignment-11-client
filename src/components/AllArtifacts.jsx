@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useLoaderData, useNavigate } from "react-router-dom";
 import { Search, Filter, Calendar, Map, Clock, Book } from "lucide-react";
+import { Helmet } from "react-helmet";
 
 const AllArtifacts = ({
   stats = { totalArtifacts: 0, categories: 0, timePeriods: 0, locations: 0 },
@@ -38,6 +39,9 @@ const AllArtifacts = ({
 
   return (
     <section className="bg-gray-50 -mt-12 py-16">
+      <Helmet>
+        <title>All Artifacts</title>
+      </Helmet>
       <div className="mx-auto max-w-7xl px-4">
         {/* Title */}
         <h2 className="mb-8 text-3xl font-bold">All Artifacts</h2>
