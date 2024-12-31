@@ -10,9 +10,6 @@ import ExploreSection from "../components/ExploreSection";
 import HistorySection from "../components/HistorySection";
 
 export default function Home() {
-  useEffect(() => {
-    document.title = "Home | Assignora";
-  }, []);
   return (
     <div className="">
       <div className="md:pt-12 pt-5">

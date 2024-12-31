@@ -2,33 +2,48 @@ import React, { useState } from "react";
 import { Link, useLoaderData } from "react-router-dom";
 import { MdPlace, MdEvent } from "react-icons/md";
 
-const ArtifactCard = ({ artifact }) => (
-  <div className="overflow-hidden rounded-lg bg-white shadow-md transition-transform hover:-translate-y-1">
-    <img
-      src={artifact.image}
-      alt={artifact.name}
-      className="h-48 w-full object-cover"
-    />
-    <div className="p-4">
-      <h3 className="mb-2 text-xl font-semibold">{artifact.name}</h3>
-      <p className="mb-4 text-gray-600">{artifact.description}</p>
-      <div className="mb-4 flex flex-wrap gap-2 text-sm text-gray-500">
-        <span className="flex items-center">
-          <MdPlace className="mr-1 h-4 w-4" /> {artifact.location}
-        </span>
-        <span className="flex items-center">
-          <MdEvent className="mr-1 h-4 w-4" /> {artifact.date}
-        </span>
-      </div>
-      <div className="flex items-center justify-between">
-        <span className="text-sm text-gray-500">❤️ {artifact.likes}</span>
-        <button className="rounded-full bg-blue-600 px-4 py-2 text-sm text-white hover:bg-blue-700">
-          View Details
-        </button>
+import { useNavigate } from "react-router-dom";
+// import { MdPlace, MdEvent } from "react-icons/md";
+
+const ArtifactCard = ({ artifact }) => {
+  const navigate = useNavigate();
+
+  // Function to handle the "View Details" click
+  const handleViewDetails = () => {
+    navigate(`/artifact/${artifact._id}`); // Navigate to the details page using the artifact ID
+  };
+
+  return (
+    <div className="overflow-hidden rounded-lg bg-white shadow-md transition-transform hover:-translate-y-1">
+      <img
+        src={artifact.image}
+        alt={artifact.name}
+        className="h-48 w-full object-cover"
+      />
+      <div className="p-4">
+        <h3 className="mb-2 text-xl font-semibold">{artifact.name}</h3>
+        <p className="mb-4 text-gray-600">{artifact.description}</p>
+        <div className="mb-4 flex flex-wrap gap-2 text-sm text-gray-500">
+          <span className="flex items-center">
+            <MdPlace className="mr-1 h-4 w-4" /> {artifact.location}
+          </span>
+          <span className="flex items-center">
+            <MdEvent className="mr-1 h-4 w-4" /> {artifact.date}
+          </span>
+        </div>
+        <div className="flex items-center justify-between">
+          <span className="text-sm text-gray-500">❤️ {artifact.likes}</span>
+          <button
+            onClick={handleViewDetails}
+            className="rounded-full bg-blue-600 px-4 py-2 text-sm text-white hover:bg-blue-700"
+          >
+            View Details
+          </button>
+        </div>
       </div>
     </div>
-  </div>
-);
+  );
+};
 
 const FeaturedArtifacts = () => {
   const artifacts = useLoaderData();

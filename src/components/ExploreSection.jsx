@@ -38,7 +38,7 @@ const ExploreSection = () => {
           </div>
           <div className="relative hidden md:block">
             <img
-              src="https://i.ibb.co.com/N2vbqsz/london-british-museum-hunting-relief-palace-assurbanipal-nineveh-assyria-uk-november-51408355.webp"
+              src="https://i.ibb.co.com/1XyVqFR/Delphi-Cover5.webp"
               alt="Category collection"
               className="rounded-lg object-cover shadow-lg"
             />
