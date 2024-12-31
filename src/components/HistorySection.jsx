@@ -23,7 +23,7 @@ const HistorySection = () => {
             <div className="relative group cursor-pointer">
               <div className="aspect-square rounded-2xl overflow-hidden">
                 <img
-                  src="https://i.ibb.co.com/hfqD2qr/download-9.jpg"
+                  src="https://i.ibb.co.com/d4JNdD6/Mexico-City-Museo-Nacional-de-Antropologia-Stone-of-the-Sun-20693400581.jpg"
                   alt="Ancient Tools"
                   className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
                 />
