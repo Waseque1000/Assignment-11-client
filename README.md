@@ -1,24 +1,37 @@
-# Assignora - Online Group-Study Web Application
+# Historical Artifacts Tracker
 
-## Purpose
+## Live Link
 
-**Assignora**, A web application that allows users to create assignments, complete them, and evaluate their friends' work.
+[Live Link](https://job-portal-0001.web.app/)
 
-**Live Site**: [Assignora Live](https://assignora.netlify.app/)
-**Backend Repository**: [Assignora Backend](https://github.com/devmilon923/Assignora-Backend)
+## Project Overview
+
+The **Historical Artifacts Tracker** is a web application designed to track historical artifacts, allowing users to browse, add, update, like, and manage artifacts. The application includes features like user authentication, CRUD operations for artifacts, a like system, and dynamic content based on user interactions. The project emphasizes a user-friendly interface and responsiveness across devices.
 
 ## Key Features
 
-- **Authentication**: Email/password login with Google login option.
-- **Assignment Management**: Users can view and update or delete their own assignments.
-- **Submission System**: Users can submit assignments via Google Docs links with some others information.
-- **Protected Routes**: Private routes for assignment management.
-- **JWT Authentication**: Private routes for assignment management.
-- **Theme Toggle**: Light/Dark mode switching.
-- **Responsive Design**: Fully responsive layout that works on all devices including mobile, tablet, and desktop.
+- **User Authentication:** Email/password login, Google/GitHub social login with Firebase authentication.
+- **CRUD Operations:** Users can create, view, update, and delete artifacts. Artifacts include fields such as name, image, description, discovery details, and more.
+- **Like System:** Users can like/dislike artifacts, with the like count updated in real-time both on the front-end and in the database.
+- **Search Functionality:** Search for artifacts by name on the "All Artifacts" page.
+- **Responsive Design:** Fully responsive on mobile, tablet, and desktop devices using Tailwind CSS.
+- **Private Routes:** Protected routes for user profiles, liked artifacts, and adding/editing artifacts, with JWT-based authentication.
+- **Dynamic Website Title:** Website title changes dynamically based on the current route.
+- **Loading Spinner:** Shows a loading spinner while data is being fetched.
+- **Toast Notifications:** Inform users of success or failure actions (e.g., adding an artifact, liking an artifact).
 
-## NPM Packages
+## Technologies Used
 
-- **Date Picker**: react-datepicker.
-- **Notifications**: React-toastify.
-- **Animation**: Aos.
+- **Frontend:**
+  - React.js (for UI)
+  - Tailwind CSS (for styling)
+  - React Router (for routing)
+  - Firebase (for authentication)
+  - React Toastify (for notifications)
+- **Backend:**
+  - Node.js (for server)
+  - Express.js (for API routes)
+  - MongoDB (for data storage)
+- **Deployment:**
+  - Frontend: Firebase
+  - Backend: Vercel
