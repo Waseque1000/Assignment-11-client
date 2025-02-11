@@ -34,20 +34,32 @@ export default function Navbar() {
         </NavLink>
       </div>
       <div>
-        <NavLink
-          className="hover:bg-transparent dark:text-gray-300 font-semibold transition-all duration-200 hover:focus:bg-transparent hover:text-[#0e9f6e]"
-          to={"/liked"}
-        >
-          Liked Artifacts
-        </NavLink>
+        {user ? (
+          <>
+            <NavLink
+              className="hover:bg-transparent dark:text-gray-300 font-semibold transition-all duration-200 hover:focus:bg-transparent hover:text-[#0e9f6e]"
+              to={"/liked"}
+            >
+              Liked Artifacts
+            </NavLink>
+          </>
+        ) : (
+          <></>
+        )}
       </div>
       <div>
-        <NavLink
-          className="hover:bg-transparent dark:text-gray-300 font-semibold transition-all duration-200 hover:focus:bg-transparent hover:text-[#0e9f6e]"
-          to={"/my-artifacts"}
-        >
-          My Artifacts
-        </NavLink>
+        {user ? (
+          <>
+            <NavLink
+              className="hover:bg-transparent dark:text-gray-300 font-semibold transition-all duration-200 hover:focus:bg-transparent hover:text-[#0e9f6e]"
+              to={"/my-artifacts"}
+            >
+              My Artifacts
+            </NavLink>
+          </>
+        ) : (
+          <></>
+        )}
       </div>
     </>
   );
