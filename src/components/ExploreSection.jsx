@@ -61,7 +61,7 @@ import React from "react";
 
 const CategoryButton = ({ title, count }) => (
   <button className="rounded-lg bg-gray-100 dark:bg-gray-800 p-4 text-left hover:bg-gray-200 dark:hover:bg-gray-700 transition-all duration-300">
-    <span className="mb-2 block font-semibold text-lg md:text-xl dark:text-gray-300">
+    <span className="mb-2 block font-semibold text-lg md:text-xl text-gray-900 dark:text-gray-300">
       {title}
     </span>
     <span className="text-sm md:text-base text-gray-600 dark:text-gray-400">
@@ -105,9 +105,9 @@ const ExploreSection = () => {
           {/* Image Section */}
           <div className="relative hidden md:block">
             <img
-              src="https://i.ibb.co/1XyVqFR/Delphi-Cover5.webp"
+              src="https://i.ibb.co.com/1XyVqFR/Delphi-Cover5.webp"
               alt="Category collection"
-              className="rounded-lg object-cover shadow-lg w-full h-auto"
+              className="rounded-lg object-cover shadow-lg dark:shadow-gray-700 w-full h-auto"
             />
           </div>
         </div>
