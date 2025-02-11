@@ -11,9 +11,9 @@ import {
 
 const HistorySection = () => {
   return (
-    <div className="bg-gray-50">
+    <div className="bg-gray-50 dark:bg-gray-900">
       {/* Featured Collections Section */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-white dark:bg-gray-800">
         <div className="max-w-7xl mx-auto px-4">
           <h2 className="text-3xl font-bold text-gray-900 mb-12 text-center">
             Explore Collections
@@ -83,9 +83,9 @@ const HistorySection = () => {
       </section>
 
       {/* Timeline Section */}
-      <section className="py-16 bg-gradient-to-br from-indigo-50 to-white">
+      <section className="py-16 bg-gradient-to-br from-indigo-50 to-white dark:from-gray-800 dark:to-gray-900">
         <div className="max-w-7xl mx-auto px-4">
-          <h2 className="text-3xl font-bold text-gray-900 mb-12 text-center">
+          <h2 className="text-3xl font-bold text-gray-900 dark:text-gray-100 mb-12 text-center">
             Journey Through Time
           </h2>
           <div className="relative">
@@ -94,14 +94,14 @@ const HistorySection = () => {
               {/* Timeline Item 1 */}
               <div className="flex items-center justify-between">
                 <div className="w-5/12">
-                  <div className="bg-white p-6 rounded-lg shadow-md">
-                    <span className="text-sm font-medium text-indigo-600">
+                  <div className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md">
+                    <span className="  font-medium text-indigo-600 dark:text-white text-2xl">
                       3000 BC
                     </span>
                     <h3 className="text-lg font-semibold mt-2">
                       Early Bronze Age
                     </h3>
-                    <p className="text-gray-600 mt-2">
+                    <p className="text-gray-600  dark:text-white mt-2">
                       Discovery of metalworking and early tools
                     </p>
                   </div>
@@ -119,14 +119,14 @@ const HistorySection = () => {
                   <div className="w-8 h-8 bg-indigo-600 rounded-full border-4 border-white" />
                 </div>
                 <div className="w-5/12">
-                  <div className="bg-white p-6 rounded-lg shadow-md">
-                    <span className="text-sm font-medium text-indigo-600">
+                  <div className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md">
+                    <span className="  font-medium text-indigo-600 dark:text-white text-2xl">
                       1200 BC
                     </span>
                     <h3 className="text-lg font-semibold mt-2">
                       Iron Age Begins
                     </h3>
-                    <p className="text-gray-600 mt-2">
+                    <p className="text-gray-600  dark:text-white mt-2">
                       Advanced metallurgy and weapon crafting
                     </p>
                   </div>
@@ -136,14 +136,14 @@ const HistorySection = () => {
               {/* Timeline Item 3 */}
               <div className="flex items-center justify-between">
                 <div className="w-5/12">
-                  <div className="bg-white p-6 rounded-lg shadow-md">
-                    <span className="text-sm font-medium text-indigo-600">
+                  <div className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md">
+                    <span className="  font-medium text-indigo-600 dark:text-white text-2xl">
                       500 BC
                     </span>
                     <h3 className="text-lg font-semibold mt-2">
                       Classical Period
                     </h3>
-                    <p className="text-gray-600 mt-2">
+                    <p className="text-gray-600  dark:text-white mt-2">
                       Art, philosophy, and cultural artifacts
                     </p>
                   </div>
@@ -159,14 +159,14 @@ const HistorySection = () => {
       </section>
 
       {/* Community Section */}
-      <section className="py-16 bg-white">
+      <div className="bg-gray-50 mt-7 dark:bg-gray-900">
         <div className="max-w-7xl mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-3xl font-bold text-gray-900 mb-6">
+              <h2 className="text-3xl font-bold  dark:text-white text-gray-900 mb-6">
                 Join Our Community of History Enthusiasts
               </h2>
-              <p className="text-gray-600 mb-8 text-lg">
+              <p className="text-gray-600  dark:text-white mb-8 text-lg">
                 Connect with fellow history lovers, share discoveries, and
                 contribute to our growing database of historical artifacts.
               </p>
@@ -175,11 +175,11 @@ const HistorySection = () => {
                   <div className="p-2 bg-indigo-100 rounded-lg">
                     <Book className="w-6 h-6 text-indigo-600" />
                   </div>
-                  <div>
-                    <h3 className="font-semibold text-gray-900">
+                  <div className=" dark:text-white">
+                    <h3 className="font-semibold  dark:text-white text-gray-900">
                       Share Knowledge
                     </h3>
-                    <p className="text-gray-600 text-sm">
+                    <p className="text-gray-600  dark:text-white text-sm">
                       Contribute your expertise and insights
                     </p>
                   </div>
@@ -189,10 +189,10 @@ const HistorySection = () => {
                     <Camera className="w-6 h-6 text-indigo-600" />
                   </div>
                   <div>
-                    <h3 className="font-semibold text-gray-900">
+                    <h3 className="font-semibold  dark:text-white text-gray-900">
                       Document Finds
                     </h3>
-                    <p className="text-gray-600 text-sm">
+                    <p className="text-gray-600  dark:text-white text-sm">
                       Upload and catalog new discoveries
                     </p>
                   </div>
@@ -202,8 +202,10 @@ const HistorySection = () => {
                     <Users className="w-6 h-6 text-indigo-600" />
                   </div>
                   <div>
-                    <h3 className="font-semibold text-gray-900">Connect</h3>
-                    <p className="text-gray-600 text-sm">
+                    <h3 className="font-semibold  dark:text-white text-gray-900">
+                      Connect
+                    </h3>
+                    <p className="text-gray-600  dark:text-white text-sm">
                       Network with history enthusiasts
                     </p>
                   </div>
@@ -213,14 +215,16 @@ const HistorySection = () => {
                     <Scroll className="w-6 h-6 text-indigo-600" />
                   </div>
                   <div>
-                    <h3 className="font-semibold text-gray-900">Research</h3>
-                    <p className="text-gray-600 text-sm">
+                    <h3 className="font-semibold  dark:text-white text-gray-900">
+                      Research
+                    </h3>
+                    <p className="text-gray-600  dark:text-white text-sm">
                       Access detailed artifact information
                     </p>
                   </div>
                 </div>
               </div>
-              <button className="inline-flex items-center gap-2 px-6 py-3 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700 transition-colors">
+              <button className="inline-flex items-center gap-2 px-6 py-3 bg-indigo-600 text-white rounded-lg  dark:text-white hover:bg-indigo-700 transition-colors">
                 Join Community
                 <ArrowRight className="w-5 h-5" />
               </button>
@@ -249,7 +253,7 @@ const HistorySection = () => {
             </div>
           </div>
         </div>
-      </section>
+      </div>
     </div>
   );
 };
