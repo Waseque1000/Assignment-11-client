@@ -25,7 +25,7 @@ const ExploreSection = () => {
         <div className="grid gap-8 md:grid-cols-2 items-center">
           {/* Text Section */}
           <div className="flex flex-col justify-center">
-            <h2 className="mb-4 text-2xl md:text-3xl font-bold text-gray-800 dark:text-gray-200">
+            <h2 className="mb-4 text-2xl md:text-3xl dark:text-white font-bold text-gray-800 ">
               Explore by Category
             </h2>
             <p className="mb-6 text-sm md:text-base text-gray-600 dark:text-gray-400">
