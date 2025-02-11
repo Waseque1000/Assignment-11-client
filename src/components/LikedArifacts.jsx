@@ -42,7 +42,7 @@ const LikedArtifacts = () => {
       <div className="flex flex-col md:flex-row justify-between items-center mb-8">
         <div className="flex items-center gap-3 mb-4 md:mb-0">
           <Heart className="w-8 h-8 text-red-500" />
-          <h1 className="text-3xl font-bold">My Collection</h1>
+          <h1 className="text-3xl dark:text-white font-bold">My Collection</h1>
           <span className="bg-red-500 text-white font-bold px-3 py-1 rounded-full">
             {artifacts.length} items
           </span>

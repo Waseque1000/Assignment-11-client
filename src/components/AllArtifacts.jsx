@@ -38,16 +38,18 @@ const AllArtifacts = ({
   };
 
   return (
-    <section className="bg-gray-50 -mt-12 py-16">
+    <section className="bg-gray-50  dark:bg-gray-800  -mt-12 py-16">
       <Helmet>
         <title>All Artifacts</title>
       </Helmet>
       <div className="mx-auto max-w-7xl px-4">
         {/* Title */}
-        <h2 className="mb-8 text-3xl font-bold">All Artifacts</h2>
+        <h2 className="mb-8 text-3xl  dark:text-white font-bold">
+          All Artifacts
+        </h2>
 
         {/* Search and Filters */}
-        <div className="bg-white shadow-sm mb-8 p-6 rounded-lg">
+        <div className="bg-white   dark:text-white  dark:bg-gray-800  shadow-sm mb-8 p-6 rounded-lg">
           {/* Search Bar */}
           <div className="relative max-w-2xl mx-auto mb-6">
             <input
@@ -118,11 +120,11 @@ const AllArtifacts = ({
         </div>
 
         {/* Artifacts Grid */}
-        <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+        <div className="grid gap-6  md:grid-cols-2 lg:grid-cols-3">
           {filteredArtifacts.map((artifact) => (
             <div
               key={artifact.name}
-              className="overflow-hidden rounded-lg bg-white shadow-md transition-transform hover:-translate-y-1"
+              className="overflow-hidden rounded-lg  dark:bg-gray-800  dark:text-white bg-white shadow-md transition-transform hover:-translate-y-1"
             >
               <img
                 src={artifact.image}
@@ -130,18 +132,24 @@ const AllArtifacts = ({
                 className="h-48 w-full object-cover"
               />
               <div className="p-4">
-                <h3 className="mb-2 text-xl font-semibold">{artifact.name}</h3>
-                <p className="mb-4 text-gray-600">{artifact.description}</p>
+                <h3 className="mb-2 text-xl dark:text-white font-semibold">
+                  {artifact.name}
+                </h3>
+                <p className="mb-4 text-gray-600 dark:text-white">
+                  {artifact.description}
+                </p>
                 <div className="mb-4 flex flex-wrap gap-2 text-sm text-gray-500">
-                  <span className="flex items-center">
-                    <Map className="mr-1 h-4 w-4" /> {artifact.location}
+                  <span className="flex items-center dark:text-white">
+                    <Map className="mr-1 h-4 w-4 dark:text-white" />{" "}
+                    {artifact.location}
                   </span>
-                  <span className="flex items-center">
-                    <Calendar className="mr-1 h-4 w-4" /> {artifact.date}
+                  <span className="flex items-center  dark:text-white">
+                    <Calendar className="mr-1 h-4 w-4 dark:text-white" />{" "}
+                    {artifact.date}
                   </span>
                 </div>
                 <div className="flex items-center justify-between">
-                  <span className="text-sm text-gray-500">
+                  <span className="text-sm  dark:text-white text-gray-500">
                     ❤️ {artifact.likes}
                   </span>
                   <button

@@ -82,11 +82,11 @@ const AddArtifact = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gray-50 p-6">
+    <div className="min-h-screen bg-gray-50 p-6 dark:text-white  dark:bg-gray-800 ">
       <Helmet>
         <title>Add Artifacts</title>
       </Helmet>
-      <div className="max-w-2xl mx-auto bg-white rounded-xl shadow-md p-8">
+      <div className="max-w-2xl mx-auto bg-white  rounded-xl shadow-md p-8">
         <h1 className="text-2xl font-bold text-gray-800 mb-6">
           Add New Artifact
         </h1>
@@ -225,17 +225,6 @@ const AddArtifact = () => {
 
           {/* Logged-in User Info */}
           <div className="space-y-4 bg-gray-50 p-4 rounded-md">
-            {/* <div>
-              <label className="block text-sm font-medium text-gray-700 mb-1">
-                Added By
-              </label>
-              <input
-                type="text"
-                // value={user.name || ""}
-                // readOnly
-                className="w-full px-3 py-2 bg-gray-100 border border-gray-300 rounded-md cursor-not-allowed"
-              />
-            </div> */}
             <div>
               <label className="block text-sm font-medium text-gray-700 mb-1">
                 User Email
