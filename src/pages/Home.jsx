@@ -9,6 +9,7 @@ import StatisticsSection from "../components/StatisticsSection";
 import ExploreSection from "../components/ExploreSection";
 import HistorySection from "../components/HistorySection";
 import { Helmet } from "react-helmet";
+import ChatBot from "../components/Chat/ChatBot";
 
 export default function Home() {
   return (
@@ -33,6 +34,9 @@ export default function Home() {
       </div>
       <div className="md:pb-12 py-6">
         <HistorySection />
+      </div>
+      <div>
+        <ChatBot />
       </div>
     </div>
   );
