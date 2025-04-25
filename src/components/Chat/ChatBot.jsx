@@ -102,7 +102,7 @@ export default function LiveChat() {
           <div className="bg-gradient-to-r from-green-500 to-green-600 text-white px-4 py-3 flex justify-between items-center rounded-t-xl">
             <div className="flex items-center space-x-2">
               <Bot size={20} className="text-white" />
-              <h3 className="font-semibold">Rentify Support</h3>
+              <h3 className="font-semibold"> Artifact Support</h3>
             </div>
             <button
               onClick={toggleChat}

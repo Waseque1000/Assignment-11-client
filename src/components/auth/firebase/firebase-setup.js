@@ -6,12 +6,12 @@
 
 // // Your web app's Firebase configuration
 // const firebaseConfig = {
-//   apiKey: "AIzaSyA7O9jmbfgJtE_YxnwCBUUZcUw0hPamvR0",
-//   authDomain: "job-portal-0001.firebaseapp.com",
-//   projectId: "job-portal-0001",
-//   storageBucket: "job-portal-0001.firebasestorage.app",
-//   messagingSenderId: "37917938800",
-//   appId: "1:37917938800:web:0c77b7d89a807a72c5d0b5",
+// apiKey: "AIzaSyA7O9jmbfgJtE_YxnwCBUUZcUw0hPamvR0",
+// authDomain: "job-portal-0001.firebaseapp.com",
+// projectId: "job-portal-0001",
+// storageBucket: "job-portal-0001.firebasestorage.app",
+// messagingSenderId: "37917938800",
+// appId: "1:37917938800:web:0c77b7d89a807a72c5d0b5",
 // };
 
 // // Initialize Firebase
